@@ -1,0 +1,88 @@
+
+
+.Desired-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content towards the top */
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 200px; /* Decrease padding to bring content higher */
+    min-height: calc(100vh - 150px);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Reduce space between heading and input */
+    color: #222;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+  
+  .Desired-input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-left: 50px;
+  }
+  
+  .Desired-input-box input {
+    font-size: 2rem;
+    width: 250px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 40px;
+ 
+  }
+  
+  .Desired-input-box span {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .red-message {
+    color: red;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    text-align: center;  /* Center the warning message */
+  }
+
+  .Desired-button {
+    padding: 15px 40px;
+    background-color: #004d40;
+    color: white;
+    padding: 15px; 
+    width: 350px;
+    border: none;
+    border-radius: 10px ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Positioning context for the arrow */
+    justify-content: center; /* Center content horiz*/
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  
+  .Desired-button:hover {
+    background-color: #00382F;
+  }
+  
+
+  .Desired-button span {
+    position: absolute; /* Adjust the gap between text and arrow */
+    font-size: 2rem;
+    right: 20px;
+  }
+  

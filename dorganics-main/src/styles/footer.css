@@ -1,0 +1,203 @@
+
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #eaeaea;
+    
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+  }
+  
+  .footer-left, .footer-right {
+    flex: 1; /* Equal division for the left and right sections */
+   display: flex;
+    flex-direction: column;
+}
+.footer-left {
+  text-align: left;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+  .footer-links p {
+    margin: 10px 180px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  white-space: nowrap; 
+  font-size: 1rem;
+    
+  }
+  
+  .footer-links p:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  /*.footer-disclaimer {
+  
+    font-size: 12px;
+    color: #777;
+    margin-top: 60px;
+    display: block;
+    margin-left: 0%;
+    
+  }*/
+
+  .footer-disclaimer p {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 160px;
+  }
+
+ 
+  .footer-right {
+    text-align: right; /* Align images to the right */
+}
+  
+  /*.footer-apps img {
+    width: 160px;
+    height: auto;
+   
+  }*/
+
+  /*.footer-apps{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Space between app store and play store buttons 
+    padding-bottom: 80px;
+    margin-right: 170px;
+
+  }*/
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;  
+    padding: 20px;
+  }
+  
+  footer {
+    margin-top: auto; /* This will push the footer to the bottom */
+      gap: 15px;
+  }
+ 
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+
+
+
+
+  .footer-disclaimer-apps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px; /* Adjust padding as needed */
+  }
+  
+
+
+  .footer-disclaimer {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .footer-apps {
+    display: flex;
+    gap: 10px;
+    margin-right: 150px;
+  }
+  
+  .footer-apps img {
+    width: 160px;
+    height: auto;
+  }
+
+
+
+  .store-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .store-button img {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+
+
+/* Mobile Responsive Design */
+@media (max-width: 480px)  {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .footer-links p {
+    margin: 0px 0;
+    font-size: 0.8rem;
+    padding: 0 10px; /* Padding to prevent text from being cropped */
+  }
+
+  .footer-disclaimer {
+    text-align: flex-start;
+    padding: 20px;
+  }
+
+  .footer-disclaimer p {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+  .footer-apps {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .footer-apps img {
+    width: 120px;
+  }
+
+  .footer-disclaimer-apps {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+

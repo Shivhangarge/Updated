@@ -1,0 +1,110 @@
+/* General styling for the container */
+.routine-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin-left: 6%;
+  }
+  
+  /* Styling the main heading */
+  .routine-Heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    max-width: 90%; /* You can adjust this width as needed */
+    margin: 0 auto; /* Centers the heading */
+    word-wrap: break-word; /* Ensures long words break if necessary */
+    text-align: center; /* Optional: Centers the text */
+    
+    
+  }
+  
+  /* Styling the subheading */
+  .routine-Subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  
+  /* Styling for the buttons container */
+  .routine-Options {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Styling individual buttons */
+  .routine-Button {
+    background-color:  #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  
+  /* Button hover effect */
+  .routine-Button:hover {
+    background-color: #eefaf1;
+    border-color: #007600;
+  }
+  
+ 
+  
+
+  /* Arrow icon inside the button */
+  .aRrow {
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  /* For button hover arrow effect */
+  .routine-Button:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive styling for mobile screens (320px - 480px) */
+@media (max-width: 480px) {
+  .routine-Container {
+      padding: 20px 10px;
+      margin-left: 0;
+      margin-top: 50px;
+
+  }
+
+  .routine-Heading {
+      font-size: 1.5rem; /* Adjusted for mobile */
+      margin-bottom: 8px;
+  }
+
+  .routine-Subheading {
+      font-size: 1rem; /* Adjusted for mobile */
+      margin-bottom: 20px;
+  }
+
+  .routine-Button {
+      padding: 15px 14px; /* Smaller padding for mobile */
+      font-size: 0.95rem; /* Smaller font size for mobile */
+  }
+
+  .aRrow {
+      font-size: 1.2rem; /* Smaller arrow icon */
+  }
+}

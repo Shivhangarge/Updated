@@ -1,0 +1,451 @@
+
+/* PaymentSuccess.css 
+.payment-success-container {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    font-family: Arial, sans-serif;
+    margin-top: 150px;
+  }
+  
+  
+  
+  .success-icon {
+    font-size: 50px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+ .payment-success-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+ .payment-success-container p {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .dashboard-button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #00382F;
+  }
+
+@media (max-width: 468px) {
+    .payment-success-container {
+      padding: 20px;
+      margin-top: 80px;
+    }
+  
+    .success-icon {
+      font-size: 36px;
+    }
+  
+   .payment-success-container h2 {
+      font-size: 18px;
+    }
+  
+   .payment-success-container p {
+      font-size: 12px;
+    }
+  
+    .dashboard-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+    
+  */
+  
+
+  /*.payment-failed-container {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .failed-icon {
+    font-size: 100px;
+    color: red;
+    background-color: #f8d7da;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-failed-container h2 {
+    font-size: 35px;
+    color: #333;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .payment-failed-container p {
+    font-size: 20px;
+    color: #666;
+    width:20%
+  }
+  
+  .cancel-button {
+    background-color: #004d40;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 20%;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #00382F;
+  }
+
+  /* Responsive adjustments for screens 468px wide or smaller 
+@media (max-width: 468px) {
+    .failed-icon {
+      font-size: 60px;
+      width: 80px;
+      height: 80px;
+    }
+  
+    .payment-failed-container h2 {
+      font-size: 24px;
+    }
+  
+    .payment-failed-container p {
+      font-size: 14px;
+    }
+  
+    .cancel-button {
+      font-size: 14px;
+      padding: 10px 12px;
+      width: 90%;
+      max-width: 180px;
+    }
+  }*/
+
+  .ResultSe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  /* Styling the main heading */
+  .ResultSe-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    max-width: 20%; /* You can adjust this width as needed */
+    margin: 0 auto; /* Centers the heading */
+    word-wrap: break-word; /* Ensures long words break if necessary */
+    text-align: center; /* Optional: Centers the text */
+    margin-top: 100px;
+    
+  }
+  
+
+
+  
+
+  .ResultSe-container img {
+    width: 370px; /* Set the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-top: 20px; /* Optional: Add some margin for spacing */
+  }
+
+  .Graph-container {
+    position: relative; /* This ensures the labels can be absolutely positioned relative to the graph */
+  }
+  
+  .current-weight, .desired-weight {
+    position: absolute; /* To position them on the graph */
+    font-size: 0.7rem; /* Adjust as needed */
+    background-color: white; /* Optional: Adds a background behind the label */
+    padding: 5px 5px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .current-weight {
+    top: 10%; /* Adjust this value to position it correctly */
+    left: 10%; /* Adjust this value to position it correctly */
+    color: red; /* Or any color to indicate current weight */
+  }
+  
+  .desired-weight {
+    top: 75%; /* Adjust this value to position it correctly */
+    left: 80%; /* Adjust this value to position it correctly */
+    color: green; /* Or any color to indicate desired weight */
+  }
+  
+
+  @media (max-width: 768px) {
+    .ResultFirst-container {
+        padding: 30px 10px; /* Reduce padding */
+    }
+    
+    .ResultFirst-container h2 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+        max-width: 90%; /* Increase max width for better fit */
+        margin-top: 80px; /* Adjust margin top */
+    }
+
+    .ResultFirst-button {
+        width: 80%; /* Make button width responsive */
+        font-size: 1rem; /* Reduce font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .ResultFirst-button span {
+        font-size: 1.5rem; /* Reduce arrow size */
+    }
+
+    .ResultFirst-container img {
+        width: 100%; /* Keep images responsive */
+    }
+
+    .current-weight, .desired-weight {
+        font-size: 0.6rem; /* Reduce font size for labels */
+    }
+}
+
+@media (max-width: 480px) {
+    .ResultFirst-container {
+        padding: 20px 5px; /* Further reduce padding */
+        margin-top: -50px;
+    }
+
+    .ResultFirst-container h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+        margin-top: 60px; /* Adjust margin top */
+    }
+
+    .ResultFirst-button {
+      padding: 12px 20px; /* Reduce button padding */
+      font-size: 1rem; /* Smaller font size */
+      width: 250px;
+      padding: 15px; 
+    }
+
+    .ResultFirst-button span {
+        font-size: 1.5rem; /* Further reduce arrow size */
+    }
+
+    .graph-container img {
+      max-width: 320px; /* Further reduce graph image size for mobile */
+  }
+
+    .current-weight, .desired-weight {
+        font-size: 0.5rem; /* Further reduce font size for labels */
+    }
+}
+
+
+.wrapper-container {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 50px; /* Additional padding around last-container */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  max-width: 1050px; /* Wider width for more grey area */
+  margin: 100px auto; /* Centering on the page */
+}
+
+.last-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh;
+  margin-left: 2%;
+  margin: 100px auto; /* Centering on the page */
+
+}
+  
+
+.header {
+  margin: 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  margin-top: -50px;
+}
+
+.plan-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan-option.active {
+  background-color: #f0f9f0;
+  border-color: #004d00;
+}
+
+.plan-option .radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.plan-option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #004d00;
+}
+
+.plan-option .discount {
+  color: red;
+  text-decoration: line-through;
+  font-size: 0.9em;
+}
+
+
+
+.plan-option .heading {
+  font-weight: bold;
+  font-size: 1rem;
+  
+}
+
+
+
+.plan-option .billing {
+  font-weight: 400;
+  font-size: 0.8em;
+ 
+ 
+
+}
+
+.plan-option .price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.plan-option .save-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #004d00;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.terms {
+  font-size: 0.9em;
+  color: #555;
+  margin: 20px 0;
+}
+
+.terms input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.terms a {
+  color: #004d00;
+  text-decoration: none;
+}
+
+.get-plan-button {
+  background-color: #004d40;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  width: 80%;
+  max-width: 200px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.get-plan-button:hover {
+  background-color:#00382F ;
+}
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .last-container {
+    padding: 30px 10px;
+  }
+
+  .header {
+    font-size: 1.3em;
+    margin: 60px 0 20px;
+  }
+
+  .plan-option {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .plan-option .radio-container {
+    margin-bottom: 10px;
+  }
+
+  .plan-option .price {
+    font-size: 1em;
+  }
+
+  .plan-option .save-tag {
+    font-size: 0.75em;
+    padding: 3px 8px;
+  }
+
+  .get-plan-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}

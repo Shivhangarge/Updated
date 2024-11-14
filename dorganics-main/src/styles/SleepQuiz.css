@@ -1,0 +1,262 @@
+
+  
+
+
+  
+  /*.Sleep-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin-left: 6%;
+  }
+
+  .Sleep-content {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+
+
+  .Sleep-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    padding-top: 120px;
+     width: 70%;
+    margin-left: 90px;
+    text-align: center;
+    
+    
+  }
+  
+
+  /* Goal List 
+
+    .Sleep-list {
+    list-style: none;
+    padding: 0px;
+   margin-left: 90px;
+   margin-right: 90px;
+    margin-top: -2rem;
+  }
+
+
+.Sleep-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  background-color: #F9F9F9; 
+  border: 2px solid #f9f9f9fb;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+
+.Sleep-item:hover {
+  background-color: rgba(0, 128, 0, 0.1);
+  border: 1px solid #004d40; 
+ 
+}
+
+
+.Sleep-arrow {
+  font-size: 2rem;
+  color: #555;
+  margin-left: 13rem; 
+  
+}
+
+.Sleep-content {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.Sleep-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+@media (max-width: 768px) { 
+  .Sleep-page-container {
+      margin-left: 2%; 
+      margin-right: 2%;
+  }
+
+  .Sleep-content h2 {
+      font-size: 1.5rem;
+      padding-top: 80px; 
+      margin: 0 10%;
+  }
+
+  .Sleep-item {
+      padding: 0.5rem; 
+      font-size: 1rem; 
+  }
+
+  .Sleep-arrow {
+      font-size: 1.5rem; 
+      margin-left: 0.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .Sleep-page-container {
+      margin-left: 2%; 
+      margin-right: 2%;
+  }
+
+  .Sleep-content h2 {
+      font-size: 24px; 
+      padding-top: 20px; 
+      margin-left: 80px;
+      
+    }
+
+
+    .Sleep-list {
+      width: 350px;
+      margin-top: 3rem;
+    }
+  
+
+  .Sleep-item {
+      padding: 0.5rem; 
+      font-size: 0.9rem; 
+    
+  }
+
+  .Sleep-arrow {
+      font-size: 1.2rem; 
+  }
+}*/
+
+.Sleep-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0 5%; /* Add responsive side margins */
+}
+
+/* Center and spacing adjustments */
+.Sleep-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Sleep-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  padding-top: 120px; /* Reduced for smaller screens */
+  width: 90%; /* Adjust width for smaller screens */
+  margin: 0; /* Centered */
+}
+
+/* Goal List */
+.Sleep-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  width: 90%;
+}
+
+/* Goal List Item */
+.Sleep-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  background-color: #F9F9F9;
+  border: 2px solid #f9f9f9fb;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.Sleep-item:hover {
+  background-color: rgba(0, 128, 0, 0.1);
+  border: 1px solid #004d40;
+}
+
+.Sleep-arrow {
+  font-size: 1.5rem;
+  color: #555;
+  margin-left: auto;
+}
+
+/* Responsive Tablet Styles */
+@media (max-width: 768px) {
+  .Sleep-page-container {
+      margin: 0 3%; /* Reduce side margins */
+  }
+
+  .Sleep-content h2 {
+      font-size: 1.5rem;
+      padding-top: 60px;
+      margin: 0;
+  }
+  
+  .Sleep-list {
+    width: 100%; /* Full width for list */
+    margin-top: 2rem;
+}
+  
+
+
+  .Sleep-item {
+      padding: 0.5rem;
+      font-size: 1rem;
+  }
+
+  .Sleep-arrow {
+      font-size: 1.2rem;
+  }
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 480px) {
+  .Sleep-page-container {
+      margin: 0 2%; /* Further reduce side margins */
+  }
+
+  .Sleep-content h2 {
+      font-size: 1.25rem; /* Smaller font size */
+      padding-top: 100px;
+  }
+
+  .Sleep-list {
+      width: 100%; /* Full width for list */
+      margin-top: 2rem;
+  }
+
+  .Sleep-item {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+  }
+
+  .Sleep-arrow {
+      font-size: 1rem;
+      margin-left: 1rem; /* Adjust margin for mobile */
+  }
+}
+
+
