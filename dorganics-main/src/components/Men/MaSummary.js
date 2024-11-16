@@ -97,7 +97,7 @@ const MaSummary = () => {
 
     handleEmailSend();
   }, [email, name, contact, currentWeight, desiredWeight, height]);
-
+    
   if (!bmiData) {
     return <h2>Loading...</h2>;
   }
@@ -143,7 +143,7 @@ const MaSummary = () => {
         </div>
       </div>
 
-      <button className="FeSummary-button" onClick={() => navigate('/ResultSe', { state: { currentWeight, desiredWeight, height } })}>
+      <button className="FeSummary-button" onClick={() => navigate('/ResultSe', { state: { currentWeight, desiredWeight, height, email, name, contact} })}>
         Next<span>›</span>
       </button>
     </div>

@@ -8,7 +8,7 @@
     text-align: center;
     background-color: #ffffff;
     min-height: 100vh;
-    margin-left: 6%;
+
   }
   
   /* Styling the main heading */
@@ -21,23 +21,25 @@
     margin: 0 auto; /* Centers the heading */
     word-wrap: break-word; /* Ensures long words break if necessary */
     text-align: center; /* Optional: Centers the text */
-    
+    max-width: 400px;
     
   }
   
   /* Styling the subheading */
   .routine-subheading {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.1rem;
+  
     margin-bottom: 40px;
     font-weight: 400;
+    
   }
   
   /* Styling for the buttons container */
   .routine-options {
-    width: 100;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     gap: 15px;
   }
   
@@ -72,7 +74,7 @@
     font-size: 1.5rem;
     color: #333;
     transition: transform 0.3s ease;
-    margin-left: 13rem
+   
   
   }
   

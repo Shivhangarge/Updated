@@ -20,7 +20,8 @@ const MenWeightLoss = () => {
 
   return (
     <div className="men-weight-loss-plan">
-      <h1 className="main-heading">WEIGHT LOSS PLAN</h1>
+     <div className="weight-plan-heading">Weight Loss Plan</div>
+
       <p className="sub-heading">According to your <strong>age</strong> and <strong>BMI</strong></p>
       <p className="quiz-text"><strong>1-MINUTE</strong> QUIZ</p>
 

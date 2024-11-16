@@ -1,7 +1,7 @@
 
 .Event-container {
     padding: 175px; /* Add padding for better spacing */
-    margin-left: 23%;
+    margin-left: 25%;
 }
 
 /* Heading styling */
@@ -16,12 +16,13 @@
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     color: black;
-    width: 55%;
+    width: 50%;
     text-align: center;
     margin-bottom: 30px;
+    margin-left:40px;
 }
 
 

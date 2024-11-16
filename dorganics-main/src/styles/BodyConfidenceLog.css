@@ -7,7 +7,7 @@
     text-align: center;
     background-color: #ffffff;
     min-height: 100vh;
-    margin-left: 6%;
+
   }
   
   /* Styling the main heading */
@@ -28,8 +28,8 @@
   
   /* Styling for the buttons container */
   .Routine-options {
-    width: 100%;
-    max-width: 500px;
+    width: 60%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -51,6 +51,8 @@
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+
+   
   }
   
   

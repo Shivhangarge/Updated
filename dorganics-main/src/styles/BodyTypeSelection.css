@@ -23,6 +23,8 @@
     margin-bottom: 20px;
     font-weight: bold;
     padding-top: 90px;
+    max-width: 500px;
+    margin-left: -10px;
   }
 
   .fe-goal-list {

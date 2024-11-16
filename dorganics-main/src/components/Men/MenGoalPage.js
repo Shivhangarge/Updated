@@ -1,52 +1,41 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 //import '../styles/GoalPage.css';
-import { useNavigate } from 'react-router-dom';
-
-
-//import { FaArrowLeft } from 'react-icons/fa';
-
+import { useNavigate } from 'react-router-dom'; 
 
 const MenGoalPage = () => {
+  const [selected, setSelected] = useState('');
+  const navigate = useNavigate();
+  const options = [
+    { id: 1, label: 'Lose weight' },
+    { id: 2, label: 'Get fit' },
+    { id: 3, label: 'Tone muscles' },
+    
+  ];
 
-  const navigate = useNavigate(); // Initialize useNavigate for navigation
-
-  // Function to handle navigation to the BodyTypeSelection page
-  const handleGoalClick = () => {
-    navigate('/MenBodyTypeSelection'); // Navigate to BodyTypeSelection page
-   
+  const handleSelect = (option) => {
+    setSelected(option);
+    navigate('/BodyTypeSelection');
   };
 
-  
   return (
     <div className="goal-page-container">
-      {/*<header className="navbar">
-        <div className="back-button">
-          <FaArrowLeft className="back-icon" />
-        </div>
-        <h1 className="logo">NoCarbs Challenge</h1>
-      </header>*/}
+      <h2 className="content">What is your goal?</h2>
       
-      <div className="content">
-        <h2>What is your goal?</h2>
-        <ul className="goal-list">
-          <li className="goal-item" onClick={handleGoalClick}>
-            <span>Lose weight</span>
+      <div className="goal-list">
+        {options.map((option) => (
+          <button
+            key={option.id}
+            className={`goal-item ${selected === option.label ? 'selected' : ''}`}
+            onClick={() => handleSelect(option.label)}
+          >
+            {option.label}
             <span className="arrow">›</span>
-          </li>
-          <li className="goal-item" onClick={handleGoalClick}>
-            <span>Get fit</span>
-            <span className="arrow">›</span>
-          </li>
-          <li className="goal-item" onClick={handleGoalClick}>
-            <span>Tone muscles</span>
-            <span className="arrow">›</span>
-          </li>
-        </ul>
+          </button>
+        ))}
       </div>
     </div>
   );
 };
 
 export default MenGoalPage;
-
-
