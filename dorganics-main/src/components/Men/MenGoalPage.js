@@ -15,7 +15,7 @@ const MenGoalPage = () => {
 
   const handleSelect = (option) => {
     setSelected(option);
-    navigate('/BodyTypeSelection');
+    navigate('/MenBodyTypeSelection');
   };
 
   return (

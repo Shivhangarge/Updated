@@ -238,12 +238,12 @@ const FoodPage = () => {
 
   return (
     <div className="Food-container">
-      <h2>Select foods you don't like</h2>
+      <h2>Select ingredients you DON'T like</h2>
       <h5>Select all you don't want to be included in your plan.</h5>
 
       {/* Main Options */}
       <div className="Meats-checkbox-container" onClick={() => handleCheckboxChange('Eats')}>
-        <label htmlFor="Eats">I eat all meats</label>
+        <label htmlFor="Eats">I eat them all</label>
         <input
           type="checkbox"
           id="Eats"

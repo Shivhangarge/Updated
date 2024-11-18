@@ -1,88 +1,101 @@
-
-
 .Desired-input-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content towards the top */
-    align-items: center;
-    background-color: #fff;
-    margin: 0 auto;
-    max-width: 500px;
-    padding-top: 200px; /* Decrease padding to bring content higher */
-    min-height: calc(100vh - 150px);
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem; /* Reduce space between heading and input */
-    color: #222;
-    text-align: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 90%; /* Responsive container width */
+  padding-top: 10%;
+  min-height: calc(100vh - 10rem); /* Responsive height */
+}
 
-  }
-  
-  .Desired-input-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    margin-left: 50px;
-  }
-  
-  .Desired-input-box input {
-    font-size: 2rem;
-    width: 250px;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    margin-left: 40px;
+.Desired-input-container h1{
+  max-width: 30%; /* Consistent width for all elements */
+  margin: 0 auto; /* Center alignment */
+}
+
+
+.Desired-input-box,
+.Desired-button {
+  max-width: 22%; /* Consistent width for all elements */
+  margin: 0 auto; /* Center alignment */
+  margin-top: 0.5rem; /* Add a small margin on top to move it slightly down */
+}
+
+.Desired-input-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+  padding: 0 1rem; /* Ensure padding matches input box */
+  margin-top: 0.5rem; /* Add a small margin on top to move it slightly down */
  
-  }
-  
-  .Desired-input-box span {
-    margin-left: 0.5rem;
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .red-message {
-    color: red;
-    margin-bottom: 0.5rem;
-    font-size: 12px;
-    text-align: center;  /* Center the warning message */
-  }
+}
 
-  .Desired-button {
-    padding: 15px 40px;
-    background-color: #004d40;
-    color: white;
-    padding: 15px; 
-    width: 350px;
-    border: none;
-    border-radius: 10px ;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: inline-flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    position: relative; /* Positioning context for the arrow */
-    justify-content: center; /* Center content horiz*/
-    margin-top: 30px;
-    margin-left: 60px;
-  }
+.Desired-input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem; /* Same padding as h1 */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  width: 100%; /* Match the width of h1 */
+  box-sizing: border-box; /* Ensure padding is included in the width */
   
-  .Desired-button:hover {
-    background-color: #00382F;
-  }
-  
+}
 
-  .Desired-button span {
-    position: absolute; /* Adjust the gap between text and arrow */
-    font-size: 2rem;
-    right: 20px;
-  }
+.Desired-input-box input {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 70%;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.Desired-input-box span {
+  margin-left: -0.5rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+.Desired-button {
+  padding: 1rem 2rem;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center content */
+  margin-top: 2rem;
+  width: 100%; /* Match the width of h1 */
+  box-sizing: border-box; /* Include padding in the width */
+  position: relative; /* Ensure proper alignment */
+}
+
+.red-message {
+  color: red;
+  margin-bottom: 0.2rem;
+  font-size: 12px;
+  text-align: center; 
+}
+
+
+.Desired-button:hover {
+  background-color: #00382F;
+}
+
+.arrow-on {
+  font-size: 2rem;
+  position: absolute; /* To align arrow to the right */
+  right: 1rem; /* Adjust the arrow's position to the right */
+}
+
   

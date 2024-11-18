@@ -28,12 +28,12 @@ function Navbar() {
     navigate(-1);
   };
 
-  const navbarClass = location.pathname === '/' ? 'navbar no-border' : 'navbar border';
+  const navbarClass = location.pathname === '/dorganicschallenge' ? 'navbar no-border' : 'navbar border';
 
   return (
     <nav className={navbarClass} style={{ '--border-width': `${borderWidth}px` }}>
       <div className="navbar-container">
-        {location.pathname !== '/' && (
+        {location.pathname !== '/dorganicschallenge' && (
           <div className="back-icon" onClick={handleBackClick}>
             <img src={backImage} alt="back option" className="back-logo" />
           </div>

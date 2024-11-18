@@ -314,17 +314,18 @@ const FeSummary = () => {
       bmi_category: bmiCategory,
     };
 
-    const handleEmailSend = async () => {
+  const handleEmailSend = async () => {
       try {
         await send('service_qxfs2ci', 'template_uxwot6g', templateParams, 'Uh6r7Lar2GwxiYyiA');
         console.log('Email sent successfully!');
       } catch (error) {
         console.error('Failed to send email:', error);
-      }
+   }
     };
 
     handleEmailSend();
   }, [email, name, contact, currentWeight, desiredWeight, height]);
+    
     
   if (!bmiData) {
     return <h2>Loading...</h2>;

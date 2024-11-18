@@ -113,6 +113,22 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 
+/* Checkmark should appear on hover */
+.checkbox-container:hover .custom-checkbox {
+    background-color: #00695c;
+    border-color: #00695c;
+}
+
+.checkbox-container:hover .custom-checkbox::after {
+    content: '✓';
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {

@@ -62,9 +62,6 @@ import PaymentFailed from './components/PaymentFailed';
 
 
 
-
-
-
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -83,7 +80,7 @@ const ScrollToTop = () => {
       <ScrollToTop /> 
       {<Navbar/>}
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/dorganicschallenge" element={<HomePage />} />
         <Route exact path="/Contactus" element={<ContactUs />} />  
         <Route exact path='/TermsAndConditions' element={<TermsAndConditions/>}/>
         <Route exact path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>

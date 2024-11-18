@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../styles/WeightInput.css';
 import { useNavigate , useLocation} from 'react-router-dom';  
 
 

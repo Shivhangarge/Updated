@@ -77,36 +77,30 @@
   transform: translateX(5px);
 }
 
-/* Responsive design for mobile screens */
-@media (max-width: 468px) {
+
+
+/* Mobile responsiveness for screens between 320px and 468px */
+@media (max-width: 468px) and (min-width: 320px) {
   .goal-page-container {
-   
-    padding-top: 80px;
-   
+    padding: 4rem 1.5rem; /* Adjust padding for mobile */
+  }
+
+  .content {
+    font-size: 2rem; /* Slightly smaller font size */
+    margin-top: -09rem; /* Adjust top margin for mobile */
   }
 
   .goal-list {
-    margin-left: -5%;
-    margin-right: 2%;
-  }
-  
-  
-  .content {
-    font-size: 1.5rem;
-   
+    max-width: 100%;
+    gap: 0.8rem; /* Reduce gap between buttons */
   }
 
   .goal-item {
-    font-size: 1rem;
-    padding: 15px 20px;
+    padding: 1rem 1.2rem; /* Adjust button padding */
+    font-size: 1rem; /* Reduce font size */
   }
 
-  .goal-item:hover .arrow {
-    transform: translateX(5px);
-  }
   .arrow {
-    font-size: 1.3rem;
-    margin-left: 6rem;
+    font-size: 1.2rem; /* Smaller arrow icon */
+  }
 }
-}
-

@@ -82,7 +82,7 @@ const MeatsPage = () => {
 
   return (
     <div className="Meats-container">
-      <h2>Select meats you don't like</h2>
+      <h2>Select meats you DON'T like</h2>
       <h5>Select all you don't want to be included in your plan.</h5>
 
       {/* Main Options */}

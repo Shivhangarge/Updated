@@ -87,19 +87,19 @@
   @media (max-width: 468px) {
     .routine-container {
      
-      padding-top: 80px;
+      padding-top: 5rem; /* Use rem for consistent spacing */
      
     }
 
     .routine-options {
-      margin-left: -5%;
-      margin-right: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     
     
     .routine-heading {
       font-size: 1.5rem;
-     
+      
     }
   
     .routine-button {

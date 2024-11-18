@@ -82,19 +82,19 @@
 @media (max-width: 468px) {
   .Sleep-page-container {
    
-    padding-top: 80px;
+    padding: 4rem 1.5rem; /* Adjust padding for mobile */
    
   }
 
   .Sleep-list {
-    margin-left: -5%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   
   .Sleep-content {
     font-size: 1.5rem;
-   
+    margin-top: -05rem; /* Adjust top margin for mobile */
   }
 
   .Sleep-item {

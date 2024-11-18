@@ -172,19 +172,20 @@
    @media (max-width: 480px) {
     .area-container {
       height: auto;
-      padding-top: 100px;
+      padding-top: 60px; /* Reduced padding-top for a better positioning of content */
     }
   
     
     .area-container h1 {
-        font-size: 1.5rem;
-        padding-top: 20px; /* Adjust padding */
+        font-size: 2rem;
+        padding-top: -5%
        
        
     }
      
     .area-container p {
-      padding-left:20px;
+      padding-left:40px;
+      font-size: 1rem;
     }
     .body-part-button {
         padding: 5px 8px;
@@ -199,8 +200,8 @@
     }
 
     .body-image-container {
-      max-width: 300px; /* Adjust for smaller screens */
-      width: 100%; /* Make image container responsive */
+      max-width: 300px; 
+      width: 100%; 
   }
 
   .chest-button {
