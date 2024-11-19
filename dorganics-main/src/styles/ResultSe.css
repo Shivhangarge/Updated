@@ -219,7 +219,7 @@
     .ResultSe-container h2 {
       font-size: 1.2rem; /* Smaller font for very small devices */
       max-width: 50%; /* Allow more space for the heading */
-      margin-top: 30px; /* Further reduce margin */
+      margin-top: 55px; /* Further reduce margin */
     }
   
     .ResultSe-container img {

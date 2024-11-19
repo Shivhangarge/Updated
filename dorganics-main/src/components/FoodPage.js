@@ -243,7 +243,7 @@ const FoodPage = () => {
 
       {/* Main Options */}
       <div className="Meats-checkbox-container" onClick={() => handleCheckboxChange('Eats')}>
-        <label htmlFor="Eats">I eat them all</label>
+        <label htmlFor="Eats">I eat all of them</label>
         <input
           type="checkbox"
           id="Eats"

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 //import '../styles/SleepQuiz.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ const MaSleepQuiz = () => {
           <FaArrowLeft className="back-icon" />
         </div>
         <h1 className="logo">NoCarbs Challenge</h1>
-      </header>*/}
+      </header>}
       
       <div className="Sleep-content">
         <h2>How much do you usually sleep?</h2>
@@ -57,5 +57,55 @@ const MaSleepQuiz = () => {
   );
 };
 
-export default MaSleepQuiz;
+export default MaSleepQuiz;*/
 
+import React, { useState } from 'react';
+//import '../styles/SleepQuiz.css';
+import {  useNavigate, useLocation } from 'react-router-dom'; 
+
+const MaSleepQuiz = () => {
+  const [selected, setSelected] = useState('');
+  const navigate = useNavigate();
+  const location = useLocation();
+    const { currentWeight, desiredWeight, height } = location.state || { // Height ko destructure kiya gaya hai
+      currentWeight: null,
+      desiredWeight: null,
+      height: null,
+    };
+  
+
+  const options = [
+    { id: 1, label: 'Less than 5 hours' },
+    { id: 2, label: '5-6 hours' },
+    { id: 3, label: '7-8 hours' },
+    { id: 4, label: 'More than 8 hours' },
+  ];
+
+  const handleSelect = (option) => {
+    setSelected(option);
+    navigate('/MaWaterQuiz', { state: { currentWeight, desiredWeight, height } }); // Navigate to WaterQuiz page
+  };
+
+
+
+  return (
+    <div className="Sleep-page-container">
+      <h1 className="Sleep-content">What does your day-to-day look like?</h1>
+      
+      <div className="Sleep-list">
+        {options.map((option) => (
+          <button
+            key={option.id}
+            className={`Sleep-item ${selected === option.label ? 'selected' : ''}`}
+            onClick={() => handleSelect(option.label)}
+          >
+            {option.label}
+            <span className="arrow">›</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default MaSleepQuiz;

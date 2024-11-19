@@ -45,6 +45,8 @@ const DetailsForm = () => {
                         type="text"
                         id="name"
                         name="name"
+                        className="input-with-placeholder"
+                        placeholder="Enter your name to get your plan"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -57,6 +59,8 @@ const DetailsForm = () => {
                         type="tel"
                         id="contact"
                         name="contact"
+                        className="input-with-placeholder"
+                        placeholder="Enter your contact number to get your plan"
                         value={formData.contact}
                         onChange={handleChange}
                         required
@@ -69,6 +73,8 @@ const DetailsForm = () => {
                         type="email"
                         id="email"
                         name="email"
+                        className="input-with-placeholder"
+                         placeholder="Enter your email to get your plan"
                         value={formData.email}
                         onChange={handleChange}
                         required

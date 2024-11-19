@@ -227,7 +227,7 @@ import Poultry from '../../images/poultry.webp';
 import Pork from '../../images/pork.webp';
 import Beef from '../../images/beef.webp';
 import Lamb from '../../images/lamb.webp';
-import Veal from '../../images/veal.webp';
+import Shellfish from '../../images/shellfish.webp';
 
 const MaMeatsPage = () => {
   const location = useLocation();
@@ -247,7 +247,7 @@ const MaMeatsPage = () => {
     Beef: false,
     Fish: false,
     Lamb: false,
-    Veal: false,
+    Shellfish: false,
   });
   const [errorMessage, setErrorMessage] = useState(false);
 
@@ -265,7 +265,7 @@ const MaMeatsPage = () => {
         newState.Beef = false;
         newState.Fish = false;
         newState.Lamb = false;
-        newState.Veal = false;
+        newState.Shellfish = false;
       } else if (name === 'Vegetarian') {
         newState.Meats = false;
         newState.Vegetarian = !prevData.Vegetarian;
@@ -274,7 +274,7 @@ const MaMeatsPage = () => {
         newState.Beef = false;
         newState.Fish = false;
         newState.Lamb = false;
-        newState.Veal = false;
+        newState.Shellfish = false;
       } else {
         newState.Meats = false;
         newState.Vegetarian = false;
@@ -296,7 +296,7 @@ const MaMeatsPage = () => {
     }
   };
 
-  const images = { Poultry, Pork, Beef, Fish, Lamb, Veal };
+  const images = { Poultry, Pork, Beef, Fish, Lamb, Shellfish };
 
   return (
     <div className="Meats-container">

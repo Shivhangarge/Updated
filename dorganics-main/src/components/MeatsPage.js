@@ -7,7 +7,7 @@ import Poultry from '../../src/images/poultry.webp';
 import Pork from '../../src/images/pork.webp';
 import Beef from '../../src/images/beef.webp';
 import Lamb from '../../src/images/lamb.webp';
-import Veal from '../../src/images/veal.webp';
+import Shellfish from '../../src/images/shellfish.webp';
 import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const MeatsPage = () => {
@@ -28,7 +28,7 @@ const MeatsPage = () => {
     Beef: false,
     Fish: false,
     Lamb: false,
-    Veal: false,
+    Shellfish: false,
   });
   const [errorMessage, setErrorMessage] = useState(false);
 
@@ -46,7 +46,7 @@ const MeatsPage = () => {
         newState.Beef = false;
         newState.Fish = false;
         newState.Lamb = false;
-        newState.Veal = false;
+        newState.Shellfish = false;
       } else if (name === 'Vegetarian') {
         newState.Meats = false;
         newState.Vegetarian = !prevData.Vegetarian;
@@ -55,7 +55,7 @@ const MeatsPage = () => {
         newState.Beef = false;
         newState.Fish = false;
         newState.Lamb = false;
-        newState.Veal = false;
+        newState.Shellfish = false;
       } else {
         newState.Meats = false;
         newState.Vegetarian = false;
@@ -99,7 +99,7 @@ const MeatsPage = () => {
       </div>
 
       {/* Sub-Options */}
-      {['Poultry', 'Pork', 'Beef', 'Fish', 'Lamb', 'Veal'].map((item) => (
+      {['Poultry', 'Pork', 'Beef', 'Fish', 'Lamb', 'Shellfish'].map((item) => (
         <div
           key={item}
           className="Sub-checkbox-container"

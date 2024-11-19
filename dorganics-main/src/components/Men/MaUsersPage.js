@@ -17,7 +17,7 @@ const UsersPage = () => {
       
       <section className="challenge-content">
         <p>Become one of more than</p>
-        <h2>30 million users</h2>
+        {/*<h2>10 thousand users</h2>*/}
 
         <div className="image-container">
           <img src={globeImage} alt="WOrldImage" className="globe-image" />

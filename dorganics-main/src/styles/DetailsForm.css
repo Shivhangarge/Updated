@@ -113,3 +113,24 @@ font-family: 'Arial', sans-serif; /* Match button font */
     
   }
 }
+
+/* Placeholder Styling */
+.details-input::placeholder {
+  font-family: 'Arial', sans-serif; /* Match the button font */
+  font-size: 14px; /* Adjust font size for readability */
+  color: #7f8c8d; /* Subtle color for better appearance */
+  opacity: 0.9; /* Slight transparency for a softer look */
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .details-input::placeholder {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .details-input::placeholder {
+    font-size: 12px; /* Even smaller font size for very small devices */
+  }
+}
