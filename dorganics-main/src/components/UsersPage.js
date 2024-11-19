@@ -17,7 +17,7 @@ const UsersPage = () => {
       </header>*/}
       
       <section className="challenge-content">
-        <p>Become one of more than</p>
+        {/*<p>Become one of more than</p>*/}
         {/*<h2>10 thousand users</h2>*/}
 
         <div className="image-container">
