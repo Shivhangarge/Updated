@@ -1,133 +1,5 @@
 
 
-/*.Age-input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  align-items: center;
-  background-color: #fff;
-  margin: 0 auto;
-  max-width: 500px;
-  padding-top: 200px; 
-  min-height: calc(100vh - 150px);
-  margin-left: 30%; 
-}
-
-.Age-input-container h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem; 
-  color: #222;
-  text-align: center;
-  max-width: 320px;
-  margin-left: 50px;
-}
-
-.Age-input-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  margin-left: 50px; 
-}
-
-.Age-input-box input  {
-  font-size: 2rem;
-  font-weight: bold;
-  width: 270px; 
-  text-align: center;
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-
-.Age-input-box  span {
-  margin-left: -0.5rem;
-  font-size: 1rem;
-  color: #777;
-}
-
-.waRNing-message {
-  color: red;
-  margin-bottom: 0.2rem;
-  font-size: 12px;
-  text-align: center; 
-}
-
-.Agebutton {
-padding: 15px 40px;
-background-color: #004d40;
-color: white;
-padding: 15px; 
-width: 320px;
-border: none;
-border-radius: 10px ;
-font-size: 1.2rem;
-cursor: pointer;
-display: inline-flex; 
-align-items: center; 
-position: relative; 
-justify-content: center;
-margin-top: 30px;
-margin-left: 60px;
-}
-
-.Agebutton:hover {
-  background-color: #00382F;
-}
-
-.Agebutton span {
-position: absolute; 
-font-size: 2rem;
-right: 20px;
-
-}
-
-/* Mobile Styles (up to 468px) 
-@media (max-width: 468px) {
-  .Age-input-container {
-      padding-top: 175px; 
-      width: 90%; 
-      margin-left: 6%; 
-  }
-
-  .Age-input-container h1 {
-      font-size: 1.5rem; 
-      margin-top: -50px;
-  
-    
-  }
-
-  .Age-input-box {
-    width: 250px;
-    font-size: 1.5rem;
-    margin-left: 0%;
-    
-  }
-
-  .Age-input-box input {
-      width: 70%; 
-      font-size: 1.5rem; 
-     
-  }
-
-  .Agebutton {
-    padding: 12px 20px; 
-    font-size: 1rem; 
-    width: 250px;
-    padding: 15px; 
-    margin-left: 8px;
-  }
-
-  .Agebutton span{
-    margin-right: 5px;
-  }
-}*/
-
-
 
 .Age-input-container {
   display: flex;
@@ -227,4 +99,49 @@ right: 20px;
   font-size: 2rem;
   position: absolute; /* To align arrow to the right */
   right: 1rem; /* Adjust the arrow's position to the right */
+}
+
+
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 480px) {
+  .Age-input-container {
+    max-width: 100%;
+    padding-top: 5%;
+    min-height: calc(100vh - 8rem); /* Adjust height for small screens */
+  }
+
+  .Age-input-container h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+    max-width: 80%; /* Allow more width on small screens */
+    margin-top: 5rem; /* Increase margin on small screens */
+  }
+
+  .Age-input-box,
+  .Agebutton {
+    max-width: 80%; /* Make the elements wider on mobile */
+  }
+
+  .Age-input-box {
+    font-size: 1.2rem; /* Smaller input box font */
+    padding: 0.3rem 0.8rem; /* Adjust padding for better fit */
+  }
+
+  .Age-input-box input {
+    font-size: 1.5rem; /* Slightly smaller input text */
+  }
+
+  .Agebutton {
+    padding: 0.8rem 1.5rem; /* Adjust button padding */
+    font-size: 1rem; /* Smaller button font */
+  }
+
+  .Agebutton span {
+    font-size: 1.5rem; /* Adjust the arrow icon size */
+    right: 0.8rem; /* Adjust icon position */
+  }
+
+  .WArning-message {
+    font-size: 10px; /* Smaller font for warning message */
+  }
 }
